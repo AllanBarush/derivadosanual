@@ -11,10 +11,10 @@
 <!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<!-- Google Fonts: display sans + serif itálica del folleto -->
+<!-- Google Fonts: tipografía de marca RiskMathics — Poppins (headers) + Lora (cuerpo) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
 <script>
 tailwind.config = {
@@ -37,9 +37,10 @@ tailwind.config = {
         }
       },
       fontFamily: {
-        display: ['Poppins', 'system-ui', 'sans-serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        serifit: ['Fraunces', 'Georgia', 'serif']
+        display: ['Poppins', 'sans-serif'],
+        body: ['Lora', 'Georgia', 'serif'],
+        sans: ['Lora', 'Georgia', 'serif'],
+        serifit: ['Lora', 'Georgia', 'serif']
       }
     }
   }
@@ -48,8 +49,9 @@ tailwind.config = {
 
 <style>
   html{scroll-behavior:smooth}
-  body{background:#f4eee0;color:#191919;-webkit-font-smoothing:antialiased}
-  .serif-dek{font-family:'Fraunces',Georgia,serif;font-style:italic}
+  body{background:#f4eee0;color:#191919;-webkit-font-smoothing:antialiased;font-family:'Lora',Georgia,serif}
+  h1,h2,h3,h4,h5,h6,nav,button{font-family:'Poppins',sans-serif}
+  .serif-dek{font-family:'Lora',Georgia,serif;font-style:italic}
   .eyebrow{letter-spacing:.24em}
   .chart-container{position:relative;width:100%;max-width:960px;margin:0 auto;height:46vh;max-height:520px;min-height:340px;background:#faf6ec;border:1px solid #e2dac6;border-radius:1rem;padding:1.25rem;box-shadow:0 20px 50px rgba(25,25,25,.07)}
   @media (max-width:768px){.chart-container{height:60vh;min-height:420px}}
@@ -64,19 +66,19 @@ tailwind.config = {
   ::selection{background:#a8c6e6;color:#0f2d4e}
 </style>
 </head>
-<body class="font-sans">
+<body class="font-body">
 
 <!-- ============ NAV STICKY ============ -->
 <nav class="sticky top-0 z-50 backdrop-blur-md bg-rm-cream/85 border-b border-rm-line">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16">
-    <div class="font-display font-bold tracking-[.22em] text-sm text-rm-navy">RISKMATHICS<span class="text-rm-steel"> ·</span> <span class="hidden sm:inline text-rm-ink2 font-semibold tracking-[.18em] text-xs">DERIVADOS 2026</span></div>
-    <div class="hidden md:flex items-center gap-7 text-sm font-medium text-rm-ink2">
-      <a href="#abstract" class="hover:text-rm-navy transition">Programa</a>
-      <a href="#mercado" class="hover:text-rm-navy transition">Mercado</a>
-      <a href="#curriculum" class="hover:text-rm-navy transition">Curriculum</a>
-      <a href="#faculty" class="hover:text-rm-navy transition">Faculty</a>
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-4 h-16">
+    <div class="font-display font-bold tracking-[.22em] text-sm text-rm-navy whitespace-nowrap">RISKMATHICS<span class="text-rm-steel"> ·</span> <span class="hidden sm:inline text-rm-ink2 font-semibold tracking-[.18em] text-xs">DERIVADOS 2026</span></div>
+    <div class="hidden md:flex items-center gap-7 text-sm font-display font-medium text-rm-ink2">
+      <a href="#abstract" class="whitespace-nowrap hover:text-rm-navy transition">Programa</a>
+      <a href="#mercado" class="whitespace-nowrap hover:text-rm-navy transition">Mercado</a>
+      <a href="#curriculum" class="whitespace-nowrap hover:text-rm-navy transition">Curriculum</a>
+      <a href="#faculty" class="whitespace-nowrap hover:text-rm-navy transition">Faculty</a>
     </div>
-    <a href="#rm-enroll" class="bg-rm-navy text-rm-cream text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-rm-navy2 transition shadow-sm">Inscribirme</a>
+    <a href="#rm-enroll" class="flex-none whitespace-nowrap bg-rm-navy text-rm-cream text-sm font-display font-semibold px-[22px] py-2.5 rounded-full hover:bg-rm-navy2 transition shadow-sm">Inscribirme</a>
   </div>
 </nav>
 
@@ -97,8 +99,8 @@ tailwind.config = {
     </div>
 
     <div class="flex flex-wrap gap-4 mt-11">
-      <a href="#rm-enroll" class="bg-gradient-to-br from-rm-steel2 to-rm-steel text-rm-navy font-display font-bold text-base px-8 py-4 rounded-full shadow-[0_10px_36px_rgba(130,169,210,.35)] hover:-translate-y-0.5 hover:shadow-[0_16px_44px_rgba(130,169,210,.5)] transition">Quiero el temario</a>
-      <a href="#rm-enroll" class="border border-rm-cream/25 bg-rm-cream/5 text-rm-cream font-semibold text-base px-8 py-4 rounded-full hover:bg-rm-cream/15 transition">Inscribirme ahora</a>
+      <a href="#rm-enroll" class="whitespace-nowrap bg-gradient-to-br from-rm-steel2 to-rm-steel text-rm-navy font-display font-bold text-base px-8 py-4 rounded-full shadow-[0_10px_36px_rgba(130,169,210,.35)] hover:-translate-y-0.5 hover:shadow-[0_16px_44px_rgba(130,169,210,.5)] transition">Quiero el temario</a>
+      <a href="#rm-enroll" class="whitespace-nowrap border border-rm-cream/25 bg-rm-cream/5 text-rm-cream font-display font-semibold text-base px-8 py-4 rounded-full hover:bg-rm-cream/15 transition">Inscribirme ahora</a>
     </div>
   </div>
   <div class="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-rm-steel to-transparent opacity-70"></div>
@@ -412,16 +414,16 @@ tailwind.config = {
       <p class="font-display font-bold text-xl sm:text-2xl mt-1">Inicio: lunes 24 de agosto de 2026 · Virtual LIVE</p>
       <p class="text-sm text-rm-cream/85 mt-1">Grupos institucionales con descuento bajo solicitud. Asegura los lugares de tu mesa antes del cierre de cohorte.</p>
     </div>
-    <a href="#rm-enroll" class="flex-none bg-rm-cream text-rm-red font-display font-bold px-8 py-4 rounded-full hover:-translate-y-0.5 transition shadow-lg">Asegurar mi lugar</a>
+    <a href="#rm-enroll" class="flex-none whitespace-nowrap bg-rm-cream text-rm-red font-display font-bold px-8 py-4 rounded-full hover:-translate-y-0.5 transition shadow-lg">Asegurar mi lugar</a>
   </div>
 </section>
 
 <!-- ===== RISKMATHICS SALES MACHINE (inyectable) ===== -->
-<section id="rm-enroll" style="background:linear-gradient(135deg,#16406b,#0f2d4e);color:#fff;padding:64px 20px;font-family:'Inter',Arial,sans-serif;">
+<section id="rm-enroll" style="background:linear-gradient(135deg,#16406b,#0f2d4e);color:#fff;padding:64px 20px;font-family:'Lora',Georgia,serif;">
   <div style="max-width:660px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:28px;">
-      <div style="color:#a8c6e6;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
-      <h2 style="font-size:34px;margin:12px 0 8px;font-weight:800;line-height:1.15;font-family:'Poppins','Inter',Arial,sans-serif;">Asegura tu lugar</h2>
+      <div style="color:#a8c6e6;letter-spacing:3px;font-size:12px;font-weight:700;font-family:'Poppins',Arial,sans-serif;">INSCRIPCIÓN · CUPO LIMITADO</div>
+      <h2 style="font-size:34px;margin:12px 0 8px;font-weight:800;line-height:1.15;font-family:'Poppins',Arial,sans-serif;">Asegura tu lugar</h2>
       <p style="color:#c2cee0;font-size:16px;margin:0;">Déjanos tus datos, verifica tu WhatsApp y recibe el temario completo. Sin compromiso.</p>
     </div>
     <div style="background:#faf6ec;color:#1f2937;border-radius:18px;padding:32px;box-shadow:0 30px 70px rgba(0,0,0,.3);">
@@ -436,17 +438,17 @@ tailwind.config = {
           <input name="empresa" placeholder="Institución / Empresa" style="padding:13px 14px;border:1px solid #d3cab4;border-radius:10px;font-size:15px;background:#fffdf8;">
         </div>
         <input name="whatsapp" placeholder="WhatsApp (ej. +52...)" required style="padding:13px 14px;border:1px solid #d3cab4;border-radius:10px;font-size:15px;background:#fffdf8;">
-        <button type="submit" style="background:linear-gradient(135deg,#a8c6e6,#82a9d2);color:#0a1c30;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;">Quiero el temario</button>
+        <button type="submit" style="background:linear-gradient(135deg,#a8c6e6,#82a9d2);color:#0a1c30;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;white-space:nowrap;">Quiero el temario</button>
         <p style="font-size:12px;color:#8a94a6;margin:0;text-align:center;">🔒 Te enviamos un código por SMS para verificar. Datos protegidos.</p>
       </form>
       <div id="rm-verify" style="display:none;"></div>
       <div id="rm-thanks" style="display:none;background:#ecfdf5;border:1px solid #6ee7b7;color:#065f46;padding:20px;border-radius:14px;font-size:15px;">✅ <b>¡Listo!</b> Recibimos y verificamos tus datos. Te enviamos el temario y un asesor te contactará.</div>
       <div style="margin-top:24px;padding-top:22px;border-top:1px solid #e2dac6;text-align:center;">
         <div style="font-size:13px;color:#6b7280;letter-spacing:1px;">O INSCRÍBETE Y PAGA DIRECTO</div>
-        <div style="font-size:30px;font-weight:800;color:#0f2d4e;margin:8px 0 4px;font-family:'Poppins','Inter',Arial,sans-serif;">MXN $<span>35,000</span> <span style="font-size:14px;color:#6b7280;font-weight:500;">+ IVA</span></div>
+        <div style="font-size:30px;font-weight:800;color:#0f2d4e;margin:8px 0 4px;font-family:'Poppins',Arial,sans-serif;">MXN $<span>35,000</span> <span style="font-size:14px;color:#6b7280;font-weight:500;">+ IVA</span></div>
         <div style="display:grid;gap:10px;margin-top:16px;">
-          <a id="rm-paypal" href="" target="_blank" rel="noopener" style="background:#82a9d2;color:#0a1c30;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;">Pagar con PayPal · 6 MSI</a>
-          <a id="rm-stripe" href="https://buy.stripe.com/aFa5kvfPVaKY9IJcfn2Ry2e" target="_blank" rel="noopener" style="background:#0f2d4e;color:#fff;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;">Pagar con tarjeta · Stripe</a>
+          <a id="rm-paypal" href="" target="_blank" rel="noopener" style="background:#82a9d2;color:#0a1c30;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;font-family:'Poppins',Arial,sans-serif;white-space:nowrap;">Pagar con PayPal · 6 MSI</a>
+          <a id="rm-stripe" href="https://buy.stripe.com/aFa5kvfPVaKY9IJcfn2Ry2e" target="_blank" rel="noopener" style="background:#0f2d4e;color:#fff;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;font-family:'Poppins',Arial,sans-serif;white-space:nowrap;">Pagar con tarjeta · Stripe</a>
         </div>
         <p style="font-size:11px;color:#9aa4b4;margin-top:12px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
       </div>
@@ -461,7 +463,7 @@ let RM_LEAD=null;
 (function(){var pp=document.getElementById('rm-paypal');if(pp&&!RM_CFG.paypal)pp.style.display='none';var sp=document.getElementById('rm-stripe');if(sp&&!RM_CFG.stripe)sp.style.display='none';})();
 async function rmPost(p){const r=await fetch(RM_VURL,{method:"POST",headers:{"Content-Type":"application/json","apikey":RM_VKEY,"Authorization":"Bearer "+RM_VKEY},body:JSON.stringify(p)});return r.json();}
 async function rmSubmit(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));let phone=(d.whatsapp||"").trim().replace(/[\s\-()]/g,"");if(phone&&!phone.startsWith("+"))phone="+52"+phone.replace(/^0+/,"");if(!phone||phone.length<10){alert("Escribe tu WhatsApp con lada (ej +52...).");return false;}d.phone=phone;d.curso=RM_CFG.id;d.folleto=RM_CFG.folleto;RM_LEAD=d;const b=f.querySelector('button[type=submit]');b.textContent="Enviando código...";b.disabled=true;let res;try{res=await rmPost({action:"start",phone:phone,channel:"sms"});}catch(_){res={};}if(res&&(res.status==="pending"||res.ok)){f.style.display="none";rmShowCode(phone);}else{b.textContent="Quiero el temario";b.disabled=false;alert("No pudimos enviar el código. Revisa tu número.");}return false;}
-function rmShowCode(phone){var c=document.getElementById('rm-verify');c.innerHTML='<p style="margin:0 0 12px;font-size:15px;color:#1f2937;">📲 Te enviamos un código por SMS a <b>'+phone+'</b>. Ingrésalo:</p><input id="rm-otp" inputmode="numeric" placeholder="Código de 6 dígitos" style="width:100%;padding:14px;border:1px solid #d3cab4;border-radius:10px;font-size:22px;text-align:center;letter-spacing:8px;margin-bottom:12px;"><button type="button" onclick="rmVerify()" style="width:100%;background:linear-gradient(135deg,#a8c6e6,#82a9d2);color:#0a1c30;font-weight:800;font-size:16px;border:none;padding:14px;border-radius:10px;cursor:pointer;">Verificar y recibir temario</button><p id="rm-vmsg" style="font-size:12px;color:#8a94a6;margin-top:8px;"></p>';c.style.display="block";document.getElementById('rm-otp').focus();}
+function rmShowCode(phone){var c=document.getElementById('rm-verify');c.innerHTML='<p style="margin:0 0 12px;font-size:15px;color:#1f2937;">📲 Te enviamos un código por SMS a <b>'+phone+'</b>. Ingrésalo:</p><input id="rm-otp" inputmode="numeric" placeholder="Código de 6 dígitos" style="width:100%;padding:14px;border:1px solid #d3cab4;border-radius:10px;font-size:22px;text-align:center;letter-spacing:8px;margin-bottom:12px;"><button type="button" onclick="rmVerify()" style="width:100%;background:linear-gradient(135deg,#a8c6e6,#82a9d2);color:#0a1c30;font-weight:800;font-size:16px;border:none;padding:14px;border-radius:10px;cursor:pointer;font-family:\'Poppins\',Arial,sans-serif;">Verificar y recibir temario</button><p id="rm-vmsg" style="font-size:12px;color:#8a94a6;margin-top:8px;"></p>';c.style.display="block";document.getElementById('rm-otp').focus();}
 async function rmVerify(){var code=(document.getElementById('rm-otp').value||"").trim();var m=document.getElementById('rm-vmsg');if(code.length<4){m.textContent="Escribe el código completo.";return;}m.textContent="Verificando...";var res;try{res=await rmPost({action:"check",phone:RM_LEAD.phone,code:code,email:RM_LEAD.email,nombre:RM_LEAD.nombre,apellido:RM_LEAD.apellido,puesto:RM_LEAD.puesto,empresa:RM_LEAD.empresa,curso:RM_CFG.id,folleto:RM_CFG.folleto});}catch(_){res={};}if(res&&res.verified){document.getElementById('rm-verify').style.display="none";document.getElementById('rm-thanks').style.display="block";if(RM_CFG.folleto)window.open(RM_CFG.folleto,'_blank');}else{m.textContent="Código incorrecto o expirado. Intenta de nuevo.";}}
 </script>
 <!-- ===== /SALES MACHINE ===== -->
@@ -504,8 +506,8 @@ async function rmVerify(){var code=(document.getElementById('rm-otp').value||"")
         tooltip: { callbacks: { label: (c) => (c.raw > 0 ? '+' : '') + c.raw + '% vs 2024' } }
       },
       scales: {
-        x: { grid: { color: '#e2dac6' }, ticks: { color: '#6b6458', font: { family: 'Inter', size: 11 }, callback: v => v + '%' } },
-        y: { grid: { display: false }, ticks: { color: '#191919', font: { family: 'Inter', size: 11.5, weight: '600' } } }
+        x: { grid: { color: '#e2dac6' }, ticks: { color: '#6b6458', font: { family: 'Lora', size: 11 }, callback: v => v + '%' } },
+        y: { grid: { display: false }, ticks: { color: '#191919', font: { family: 'Lora', size: 11.5, weight: '600' } } }
       }
     }
   });
