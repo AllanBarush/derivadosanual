@@ -1,189 +1,520 @@
 <!DOCTYPE html>
-<html lang="es"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Capacitación Anual de Derivados — Circular 4/2012 Banxico | RiskMathics</title>
-<meta name="description" content="Programa ejecutivo anual que convierte la capacitación obligatoria de derivados (Circular 4/2012 de Banxico) en ventaja comercial y evidencia auditable de cumplimiento. 15 horas · 5 módulos · Virtual LIVE. Inicio Agosto 2026.">
-<style>
- @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap');
- :root{
-   --ink:#1a1a1a;--ink2:#6b6458;--line:#e7e0d0;--bg:#f4eee0;--soft:#ece5d4;
-   --navy:#0a2540;--navy2:#163a5f;--gold:#82a9d2;--gold2:#a8c6e6;
- }
- *{box-sizing:border-box;margin:0;padding:0}
- html{scroll-behavior:smooth}
- body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.55;letter-spacing:-.005em}
- .container{max-width:1080px;margin:0 auto;padding:0 28px}
- a{color:inherit;text-decoration:none}
- .nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(160%) blur(14px);background:rgba(244,238,224,.82);border-bottom:1px solid var(--line)}
- .nav .container{display:flex;align-items:center;justify-content:space-between;height:60px}
- .brand{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;letter-spacing:.22em;color:var(--navy)}
- .nav a.cta{font-size:13px;font-weight:600;color:var(--bg);background:var(--navy);padding:9px 18px;border-radius:100px;transition:.25s}
- .nav a.cta:hover{background:var(--navy2);transform:translateY(-1px)}
- .hero{background:linear-gradient(155deg,#1f1f1f 0%,#1a1a1a 45%,#101010 100%);color:var(--bg);position:relative;overflow:hidden}
- .hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.7}
- .hero .container{padding-top:92px;padding-bottom:96px;position:relative}
- .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.24em;color:var(--gold2);font-weight:600;text-transform:uppercase}
- .eyebrow:before{content:"";width:26px;height:1px;background:var(--gold)}
- h1{font-family:'Space Grotesk',sans-serif;font-size:62px;line-height:1.0;font-weight:700;letter-spacing:-.02em;margin:22px 0 0;max-width:14ch}
- .hero p.dek{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:22px;color:#d8d2c4;font-weight:400;margin-top:24px;max-width:46ch;line-height:1.5;letter-spacing:0}
- .hero .meta{margin-top:34px;display:flex;gap:30px;flex-wrap:wrap;font-size:14px;color:#a59f92}
- .hero .meta b{color:var(--bg);font-weight:600}
- .hero .actions{margin-top:40px;display:flex;gap:14px;flex-wrap:wrap}
- .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:600;padding:15px 30px;border-radius:100px;cursor:pointer;border:none;transition:.25s;letter-spacing:-.005em}
- .btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#0a2540;box-shadow:0 8px 30px rgba(130,169,210,.30)}
- .btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 38px rgba(130,169,210,.42)}
- .btn-ghost{background:rgba(244,238,224,.08);color:var(--bg);border:1px solid rgba(244,238,224,.24)}
- .btn-ghost:hover{background:rgba(244,238,224,.16)}
- .btn-dark{background:var(--navy);color:var(--bg)}.btn-dark:hover{background:var(--navy2);transform:translateY(-2px)}
- .stats{border-bottom:1px solid var(--line);background:var(--soft)}
- .stats .container{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:38px 28px}
- .stat .n{font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:700;letter-spacing:-.03em;color:var(--navy);font-variant-numeric:tabular-nums}
- .stat .l{font-size:13px;color:var(--ink2);margin-top:4px}
- section.block{padding:88px 0;border-bottom:1px solid var(--line)}
- .lab{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--navy2);font-weight:700}
- h2{font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;letter-spacing:-.02em;margin:14px 0 0;max-width:20ch}
- .intro{font-size:18px;color:#3c382f;max-width:62ch;margin-top:22px;line-height:1.65}
- .mods{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
- .mod{border:1px solid var(--line);border-radius:16px;padding:22px 24px;background:#faf6ec;transition:.3s;display:flex;gap:14px;align-items:flex-start}
- .mod:hover{border-color:#d4cab4;box-shadow:0 14px 40px rgba(26,26,26,.08);transform:translateY(-3px)}
- .mod .dot{flex:none;width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#dfe9f5,#c3d8ee);display:flex;align-items:center;justify-content:center;color:var(--navy);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px}
- .mod p{font-size:14.5px;color:#2e2a22;line-height:1.5}
- .mod p b{color:var(--ink)}
- .split{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:start}
- .card{background:#faf6ec;border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:0 30px 70px rgba(26,26,26,.08)}
- form{display:grid;gap:14px}
- .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
- label{font-size:12.5px;font-weight:600;color:#4a4538;display:block;margin-bottom:6px;letter-spacing:.01em}
- input{width:100%;padding:13px 15px;border:1px solid #d6cdb9;border-radius:12px;font-size:15px;font-family:inherit;transition:.2s;background:#fffdf8}
- input:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 4px rgba(10,37,64,.10);background:#fff}
- .note{font-size:12px;color:#8c8576;margin-top:6px}
- .ok{background:linear-gradient(135deg,#f0fff7,#e7faf0);border:1px solid #b6ebcf;color:#0c6b3f;padding:22px;border-radius:18px;font-size:15px;line-height:1.5}
- .hidden{display:none}
- .pricewrap{display:flex;align-items:baseline;gap:10px;margin:6px 0 18px}
- .price{font-family:'Space Grotesk',sans-serif;font-size:44px;font-weight:700;letter-spacing:-.03em;color:var(--navy);font-variant-numeric:tabular-nums}
- .price small{font-size:15px;color:var(--ink2);font-weight:500}
- .feat-min{list-style:none;margin:18px 0;display:grid;gap:10px}
- .feat-min li{font-size:14.5px;color:#3c382f;padding-left:26px;position:relative}
- .feat-min li:before{content:"✓";position:absolute;left:0;color:var(--navy2);font-weight:800}
- .pay{display:grid;gap:12px;margin-top:22px}
- .trust{font-size:12px;color:#928b7c;margin-top:14px;text-align:center}
- footer{background:var(--ink);color:#a59f92;padding:48px 0}
- footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}
- footer a{color:#d8d2c4;border-bottom:1px solid transparent;transition:.2s}footer a:hover{border-color:#d8d2c4}
- .reveal{opacity:0;transform:translateY(18px);transition:.7s cubic-bezier(.2,.7,.2,1)}
- .reveal.in{opacity:1;transform:none}
- @media(max-width:860px){h1{font-size:42px}.stats .container{grid-template-columns:1fr 1fr}.mods,.split,.frow{grid-template-columns:1fr}.hero .container{padding-top:64px;padding-bottom:68px}section.block{padding:60px 0}}
-</style></head>
-<body>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capacitación Anual de Mercados de Derivados 2026 | RiskMathics Financial Institute</title>
+<meta name="description" content="Programa ejecutivo anual que convierte la capacitación obligatoria de derivados (Circular 4/2012 de Banxico) en ventaja comercial y evidencia auditable. 15 horas · 5 módulos · Virtual LIVE · Inicio 24 de agosto 2026. Bancos y casas de bolsa.">
 
-<div class="nav"><div class="container">
-  <div class="brand">RISKMATHICS</div>
-  <a class="cta" href="#inscripcion">Inscríbete</a>
-</div></div>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<header class="hero"><div class="container">
-  <span class="eyebrow">Programa Ejecutivo Anual · Cumplimiento Banxico (Circular 4/2012)</span>
-  <h1>Capacitación Anual de Derivados</h1>
-  <p class="dek">Convierte la capacitación anual obligatoria de derivados (<b style="color:#fff;font-style:normal">Circular 4/2012 de Banxico</b>) en ventaja comercial, criterio ejecutivo y evidencia auditable de cumplimiento.</p>
-  <div class="meta"><span><b>Inicio</b> · Agosto 2026</span><span><b>15</b> horas</span><span><b>5</b> módulos</span><span><b>Modalidad</b> · Virtual LIVE</span></div>
-  <div class="actions">
-    <a class="btn btn-gold" href="#inscripcion">Recibir el temario</a>
-    <a class="btn btn-ghost" href="#programa">Ver el programa</a>
-  </div>
-</div></header>
-
-<div class="stats"><div class="container">
-  <div class="stat"><div class="n">15</div><div class="l">horas de formación</div></div>
-  <div class="stat"><div class="n">5</div><div class="l">módulos integrados</div></div>
-  <div class="stat"><div class="n">45</div><div class="l">años de mercado (1980-2025)</div></div>
-  <div class="stat"><div class="n">1</div><div class="l">Evidence Pack auditable</div></div>
-</div></div>
-
-<section class="block" id="programa"><div class="container reveal">
-  <div class="lab">El programa</div>
-  <h2>El requerimiento regulatorio dejó de ser un trámite. Hoy es ventaja de negocio.</h2>
-  <p class="intro">Programa ejecutivo anual de RiskMathics Financial Institute para bancos y casas de bolsa que transforma el requerimiento de capacitación en derivados de la <b>Circular 4/2012 de Banco de México</b> en una ventaja comercial. En <b>15 horas distribuidas en 5 módulos</b>, forma criterio ejecutivo —no solo informa— para vender, operar, controlar, documentar y supervisar derivados con visión global, aplicación local y actualización 2023-2025. Cubre <b>Front Office, Risk, Compliance, Legal, Operations y Technology</b>, y entrega un <b>Evidence Pack auditable</b> que documenta el cumplimiento ante Banxico y CNBV.</p>
-  <div class="mods">
-    <div class="mod"><div class="dot">01</div><p><b>Market Pulse &amp; Product Radar</b> — lectura ejecutiva del mercado global y mexicano de derivados 2023-2025: volumen, open interest, liquidez, volatilidad y concentración.</p></div>
-    <div class="mod"><div class="dot">02</div><p><b>Product / Institución</b> — arquitectura de productos listados y OTC, ciclo de vida del trade y modelo de operación institucional.</p></div>
-    <div class="mod"><div class="dot">03</div><p><b>Client / Relación</b> — suitability, soluciones a la medida, sell-side advisory y entregable de Suitability Matrix Cliente x Producto.</p></div>
-    <div class="mod"><div class="dot">04</div><p><b>Tech &amp; Data</b> — post-trade, data, model risk, pricing y transformación tecnológica del trade lifecycle.</p></div>
-    <div class="mod"><div class="dot">05</div><p><b>Regulation / Evidencia</b> — Banxico (Circular 4/2012), CNBV, IOSCO, ISDA y armado del Evidence Pack auditable.</p></div>
-    <div class="mod"><div class="dot">06</div><p><b>Marco regulatorio Circular 4/2012</b> — capacitación anual documentada para Front Office, Middle/Back Office, Risk-auditoría y Contabilidad/Sistemas.</p></div>
-    <div class="mod"><div class="dot">07</div><p><b>Diagnóstico 2023-2025</b> — mercado por categoría: tasas, FX, energía, metales, commodities, equity y soluciones institucionales.</p></div>
-    <div class="mod"><div class="dot">08</div><p><b>Evolución histórica 1980-2025</b> — 45 años de derivados, de 72.8M a un pico de 205B de contratos (FIA), crisis y globalización.</p></div>
-  </div>
-</div></section>
-
-<section class="block" id="inscripcion"><div class="container reveal">
-  <div class="split">
-    <div>
-      <div class="lab">Inscripción</div>
-      <h2>Déjanos tus datos y recibe el temario completo</h2>
-      <p class="intro">Te enviamos el temario detallado y las opciones de inscripción. Sin compromiso — un asesor te contacta.</p>
-      <form id="lead" onsubmit="return submitLead(event)">
-        <div class="frow">
-          <div><label>Nombre</label><input name="nombre" required></div>
-          <div><label>Apellido</label><input name="apellido"></div>
-        </div>
-        <div><label>Email corporativo</label><input type="email" name="email" required></div>
-        <div class="frow">
-          <div><label>Puesto</label><input name="puesto"></div>
-          <div><label>Institución</label><input name="empresa"></div>
-        </div>
-        <div><label>WhatsApp</label><input name="whatsapp" placeholder="+52..."></div>
-        <button class="btn btn-gold" type="submit" style="width:100%;margin-top:4px">Quiero el temario</button>
-        <p class="note">🔒 Tus datos están seguros. Te contactamos solo sobre este programa.</p>
-      </form>
-      <div id="verifybox" class="hidden" style="margin-top:18px"></div>
-  <div id="thanks" class="ok hidden">✅ <b>¡Listo!</b> Recibimos tus datos. Te enviamos el temario y un asesor te contactará. Abajo puedes asegurar tu lugar.</div>
-    </div>
-    <div class="card">
-      <div class="lab">Asegura tu lugar</div>
-      <div class="pricewrap"><span class="price">MXN $<span id="precio">—</span></span><small>+ IVA</small></div>
-      <ul class="feat-min">
-        <li>Acceso completo · 15 horas · 5 módulos · Virtual LIVE</li>
-        <li>Cumplimiento Banxico (Circular 4/2012)</li>
-        <li>Evidence Pack auditable ante Banxico y CNBV</li>
-        <li>6 meses sin intereses (PayPal) · Factura CFDI</li>
-      </ul>
-      <div class="pay">
-        <a class="btn btn-gold" id="paypal" href="#" target="_blank" rel="noopener">Pagar con PayPal · 6 MSI</a>
-        <a class="btn btn-dark" id="stripe" href="#" target="_blank" rel="noopener">Pagar con tarjeta · Stripe</a>
-      </div>
-      <p class="trust">100% seguro · SSL · PayPal Verified</p>
-    </div>
-  </div>
-</div></section>
-
-<footer><div class="container">
-  <div>RiskMathics Financial Institute · Learn. Apply. Profit.<br>Ciudad de México</div>
-  <div><a href="https://riskmathics.com">riskmathics.com</a></div>
-</div></footer>
+<!-- Google Fonts: display sans + serif itálica del folleto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
 
 <script>
-const COURSE = { id:"derivados-anual", nombre:"Capacitación Anual de Derivados (Circular 4/2012 Banxico)",
-  precio:"35,000", paypal:"", stripe:"https://buy.stripe.com/aFa5kvfPVaKY9IJcfn2Ry2e",
-  folleto:"https://riskmathics-folletos-2026.s3.amazonaws.com/derivados-anual-2026.pdf" };
-const SB_URL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/lead-distributor",SB_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmZmRzZ3ZnY3Ztb2pvYmZpdWF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzOTQ0NzQsImV4cCI6MjA5MDk3MDQ3NH0.7VKn7st3POLRTLIXx9Y4gRjXbh8v_BKXblc7vFIVu-U";
-document.getElementById('precio').textContent=COURSE.precio||"—";
-if(COURSE.stripe)document.getElementById('stripe').href=COURSE.stripe;
-if(COURSE.paypal)document.getElementById('paypal').href=COURSE.paypal;else{var _p=document.getElementById('paypal');if(_p)_p.style.display='none';}
-async function submitLead(e){e.preventDefault();const f=e.target,data=Object.fromEntries(new FormData(f));data.curso=COURSE.id;
- try{if(SB_URL)await fetch(SB_URL,{method:'POST',headers:{'Content-Type':'application/json','apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY},body:JSON.stringify(data)});}catch(err){}
- f.classList.add('hidden');document.getElementById('thanks').classList.remove('hidden');
- if(COURSE.folleto)window.open(COURSE.folleto,'_blank');return false;}
-const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-/* === Verificación Twilio Verify (SMS) === */
-const VURL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/verify-lead";
-const VKEY=SB_KEY;
-let LEAD=null;
-async function vpost(p){const r=await fetch(VURL,{method:"POST",headers:{"Content-Type":"application/json","apikey":VKEY,"Authorization":"Bearer "+VKEY},body:JSON.stringify(p)});return r.json();}
-async function submitLead(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));let phone=(d.whatsapp||"").trim().replace(/[\s\-()]/g,"");if(phone&&!phone.startsWith("+"))phone="+52"+phone.replace(/^0+/,"");if(!phone||phone.length<10){alert("Escribe tu WhatsApp/telefono con lada (ej. +52...) para verificarte.");return false;}d.phone=phone;d.curso=COURSE.id;d.folleto=COURSE.folleto;LEAD=d;const b=f.querySelector('button[type=submit]');const t0=b.textContent;b.textContent="Enviando codigo...";b.disabled=true;let res;try{res=await vpost({action:"start",phone:phone,channel:"sms"});}catch(_){res={};}if(res&&(res.status==="pending"||res.ok)){f.classList.add('hidden');showCode(phone);}else{b.textContent=t0;b.disabled=false;alert("No pudimos enviar el codigo. Revisa tu numero (con lada, ej +52).");}return false;}
-function showCode(phone){const c=document.getElementById('verifybox');c.innerHTML='<p style="margin-bottom:12px;font-size:15px">📲 Te enviamos un codigo por SMS a <b>'+phone+'</b>. Ingresalo para recibir tu temario:</p><input id="otp" inputmode="numeric" autocomplete="one-time-code" placeholder="Codigo de 6 digitos" style="width:100%;padding:13px 15px;border:1px solid #d8dee9;border-radius:12px;font-size:22px;text-align:center;letter-spacing:8px;margin-bottom:12px;font-family:inherit"><button class="btn btn-gold" type="button" style="width:100%" onclick="verifyCode()">Verificar y recibir temario</button><p id="vmsg" class="note"></p>';c.classList.remove('hidden');document.getElementById('otp').focus();}
-async function verifyCode(){const code=(document.getElementById('otp').value||"").trim();const m=document.getElementById('vmsg');if(code.length<4){m.textContent="Escribe el codigo completo.";return;}m.textContent="Verificando...";let res;try{res=await vpost({action:"check",phone:LEAD.phone,code:code,email:LEAD.email,nombre:LEAD.nombre,apellido:LEAD.apellido,puesto:LEAD.puesto,empresa:LEAD.empresa,curso:COURSE.id,folleto:COURSE.folleto});}catch(_){res={};}if(res&&res.verified){document.getElementById('verifybox').classList.add('hidden');document.getElementById('thanks').classList.remove('hidden');if(COURSE.folleto)window.open(COURSE.folleto,'_blank');}else{m.textContent="Codigo incorrecto o expirado. Intenta de nuevo.";}}
-
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        rm: {
+          cream:  '#f4eee0',
+          soft:   '#ece5d4',
+          card:   '#faf6ec',
+          line:   '#e2dac6',
+          ink:    '#191919',
+          ink2:   '#6b6458',
+          navy:   '#0f2d4e',
+          navy2:  '#16406b',
+          steel:  '#82a9d2',
+          steel2: '#a8c6e6',
+          red:    '#c8332e',
+          dark:   '#141414'
+        }
+      },
+      fontFamily: {
+        display: ['Poppins', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serifit: ['Fraunces', 'Georgia', 'serif']
+      }
+    }
+  }
+}
 </script>
-</body></html>
+
+<style>
+  html{scroll-behavior:smooth}
+  body{background:#f4eee0;color:#191919;-webkit-font-smoothing:antialiased}
+  .serif-dek{font-family:'Fraunces',Georgia,serif;font-style:italic}
+  .eyebrow{letter-spacing:.24em}
+  .chart-container{position:relative;width:100%;max-width:960px;margin:0 auto;height:46vh;max-height:520px;min-height:340px;background:#faf6ec;border:1px solid #e2dac6;border-radius:1rem;padding:1.25rem;box-shadow:0 20px 50px rgba(25,25,25,.07)}
+  @media (max-width:768px){.chart-container{height:60vh;min-height:420px}}
+  details.mod{border:1px solid #e2dac6;border-radius:1rem;background:#faf6ec;overflow:hidden;transition:box-shadow .3s}
+  details.mod[open]{box-shadow:0 24px 60px rgba(25,25,25,.10)}
+  details.mod summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:1rem;padding:1.35rem 1.5rem;user-select:none}
+  details.mod summary::-webkit-details-marker{display:none}
+  details.mod summary .chev{margin-left:auto;flex:none;width:34px;height:34px;border-radius:9999px;border:1px solid #cdc3aa;display:flex;align-items:center;justify-content:center;transition:transform .3s;color:#0f2d4e;font-weight:700}
+  details.mod[open] summary .chev{transform:rotate(45deg);background:#0f2d4e;color:#f4eee0;border-color:#0f2d4e}
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  ::selection{background:#a8c6e6;color:#0f2d4e}
+</style>
+</head>
+<body class="font-sans">
+
+<!-- ============ NAV STICKY ============ -->
+<nav class="sticky top-0 z-50 backdrop-blur-md bg-rm-cream/85 border-b border-rm-line">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16">
+    <div class="font-display font-bold tracking-[.22em] text-sm text-rm-navy">RISKMATHICS<span class="text-rm-steel"> ·</span> <span class="hidden sm:inline text-rm-ink2 font-semibold tracking-[.18em] text-xs">DERIVADOS 2026</span></div>
+    <div class="hidden md:flex items-center gap-7 text-sm font-medium text-rm-ink2">
+      <a href="#abstract" class="hover:text-rm-navy transition">Programa</a>
+      <a href="#mercado" class="hover:text-rm-navy transition">Mercado</a>
+      <a href="#curriculum" class="hover:text-rm-navy transition">Curriculum</a>
+      <a href="#faculty" class="hover:text-rm-navy transition">Faculty</a>
+    </div>
+    <a href="#rm-enroll" class="bg-rm-navy text-rm-cream text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-rm-navy2 transition shadow-sm">Inscribirme</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="bg-rm-dark text-rm-cream relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.05] bg-[radial-gradient(ellipse_at_top_right,#82a9d2,transparent_60%)]"></div>
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 pt-20 pb-24 relative z-10">
+    <p class="eyebrow uppercase text-xs font-bold text-rm-steel2 flex items-center gap-3"><span class="inline-block w-7 h-px bg-rm-steel"></span>Annual Regulatory Program · Banxico Circular 4/2012 · Edición 2026</p>
+    <p class="serif-dek text-lg sm:text-xl text-[#b9b2a3] mt-8">Global Derivatives Annual Executive Program</p>
+    <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl leading-[1.02] tracking-tight mt-2 max-w-4xl">Capacitación Anual de Mercados de Derivados <span class="text-rm-steel">2026.</span></h1>
+    <p class="serif-dek text-lg sm:text-2xl text-[#d8d2c4] mt-8 max-w-2xl leading-relaxed">Convierte la capacitación anual obligatoria en ventaja comercial, gobierno de riesgo y lenguaje común entre Front Office, Risk, Compliance, Legal, Operations y Technology.</p>
+
+    <div class="flex flex-wrap gap-x-8 gap-y-3 mt-10 text-sm text-[#a59f92]">
+      <span><b class="text-rm-cream font-semibold">Inicio</b> · 24 de agosto 2026</span>
+      <span><b class="text-rm-cream font-semibold">15</b> horas · 5 sesiones de 3h</span>
+      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-rm-steel animate-pulse"></span><b class="text-rm-cream font-semibold">Virtual LIVE</b></span>
+      <span><b class="text-rm-cream font-semibold">Cumplimiento</b> · Banxico 4/2012</span>
+    </div>
+
+    <div class="flex flex-wrap gap-4 mt-11">
+      <a href="#rm-enroll" class="bg-gradient-to-br from-rm-steel2 to-rm-steel text-rm-navy font-display font-bold text-base px-8 py-4 rounded-full shadow-[0_10px_36px_rgba(130,169,210,.35)] hover:-translate-y-0.5 hover:shadow-[0_16px_44px_rgba(130,169,210,.5)] transition">Quiero el temario</a>
+      <a href="#rm-enroll" class="border border-rm-cream/25 bg-rm-cream/5 text-rm-cream font-semibold text-base px-8 py-4 rounded-full hover:bg-rm-cream/15 transition">Inscribirme ahora</a>
+    </div>
+  </div>
+  <div class="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-rm-steel to-transparent opacity-70"></div>
+</header>
+
+<!-- ============ STATS STRIP ============ -->
+<div class="bg-rm-soft border-b border-rm-line">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div><p class="font-display font-bold text-4xl text-rm-navy tracking-tight">15<span class="text-rm-steel text-2xl align-top">h</span></p><p class="text-sm text-rm-ink2 mt-1">5 sesiones en vivo · 3h c/u</p></div>
+    <div><p class="font-display font-bold text-4xl text-rm-navy tracking-tight">5</p><p class="text-sm text-rm-ink2 mt-1">módulos · un sistema</p></div>
+    <div><p class="font-display font-bold text-4xl text-rm-navy tracking-tight">45</p><p class="text-sm text-rm-ink2 mt-1">años de mercado ETD (1980–2025)</p></div>
+    <div><p class="font-display font-bold text-4xl text-rm-navy tracking-tight">8</p><p class="text-sm text-rm-ink2 mt-1">documentos del Evidence Pack auditable</p></div>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ EXECUTIVE SUMMARY ============ -->
+<section id="abstract" class="border-b border-rm-line">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-24 reveal">
+    <p class="eyebrow uppercase text-xs font-bold text-rm-navy2">Tesis del programa · Executive Summary</p>
+    <h2 class="font-display font-bold text-3xl sm:text-4xl text-rm-ink tracking-tight mt-3 max-w-2xl">No enseñar derivados desde cero. <span class="text-rm-navy">Formar criterio ejecutivo.</span></h2>
+    <div class="grid md:grid-cols-2 gap-10 mt-10 items-start">
+      <div class="space-y-5 text-[17px] leading-relaxed text-[#3c382f]">
+        <p class="serif-dek text-xl text-rm-ink">La tesis es mucho más poderosa que un curso 101: formar criterio ejecutivo para vender, operar, controlar, documentar y supervisar derivados con visión global, aplicación local y evidencia anual de cumplimiento.</p>
+        <p>Los mercados de derivados ya no son un universo técnico reservado a traders especializados. Hoy son la <b>infraestructura central</b> para transferir riesgo, proteger márgenes, administrar liquidez y estructurar soluciones para clientes.</p>
+        <p>Para bancos y casas de bolsa en México, esta capacitación cubre el <b>requerimiento de Banxico</b> (Circular 4/2012) con componentes de actualización para Front Office, Risk, CRCOs, Legal, Operations y Technology.</p>
+      </div>
+      <div class="bg-rm-card border border-rm-line rounded-2xl p-8 shadow-[0_24px_60px_rgba(25,25,25,.07)]">
+        <p class="eyebrow uppercase text-[11px] font-bold text-rm-navy2">Edición 2026 · Actualización de máxima compresión</p>
+        <p class="mt-4 text-[15px] leading-relaxed text-[#3c382f]">Todo lo ocurrido entre <b>2023–2025</b>: evolución de productos listados y OTC, demanda real de corporativos, PYMEs, family offices, HNWIs, tesorerías, fondos e institucionales — reordenado por categoría y traducido a implicación comercial.</p>
+        <blockquote class="serif-dek text-lg text-rm-navy mt-6 border-l-2 border-rm-steel pl-5 leading-relaxed">«Es el benchmark anual para que bancos y casas de bolsa actualicen a sus equipos en lo que realmente mueve los derivados modernos.»</blockquote>
+        <p class="eyebrow uppercase text-[10px] font-bold text-rm-ink2 mt-3">— Tesis institucional · RiskMathics 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJETIVO ============ -->
+<section class="border-b border-rm-line">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-24 reveal">
+    <div class="bg-rm-dark text-rm-cream rounded-3xl p-8 sm:p-14 relative overflow-hidden">
+      <div class="absolute -top-6 -right-2 text-rm-steel opacity-10 text-[11rem] font-serifit leading-none select-none">"</div>
+      <p class="eyebrow uppercase text-xs font-bold text-rm-steel2">Objetivo de la edición 2026</p>
+      <p class="font-display font-semibold text-2xl sm:text-4xl leading-snug mt-5 max-w-3xl">Que el participante salga <span class="text-rm-steel">capacitado para operar</span> — no solamente informado: <span class="text-rm-steel">vender, operar, controlar, documentar y supervisar</span> derivados listados y OTC.</p>
+      <p class="serif-dek text-lg text-[#c9c3b5] mt-6 max-w-3xl leading-relaxed">Con visión global, aplicación local México (MexDer, swaps TIIE, futuros del dólar, Asigna) y un Evidence Pack que documenta el cumplimiento anual ante Banxico, CNBV y comités internos de auditoría.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POR QUÉ AHORA + CHART ============ -->
+<section id="mercado" class="border-b border-rm-line">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-24 reveal">
+    <p class="eyebrow uppercase text-xs font-bold text-rm-navy2">Por qué ahora · Diagnóstico 2025</p>
+    <h2 class="font-display font-bold text-3xl sm:text-4xl text-rm-ink tracking-tight mt-3 max-w-2xl">2025 no fue contracción. <span class="text-rm-red">Fue rotación.</span></h2>
+    <p class="text-[17px] text-[#3c382f] mt-6 max-w-3xl leading-relaxed">La caída agregada de <b>−42.2% en ETD global</b> se explica casi por completo por la normalización regulatoria en India (SEBI). Excluyendo ese efecto, los mercados que importan para la banca y casas de bolsa — <b>tasas, FX, energía, metales, commodities y soluciones institucionales</b> — siguieron creciendo. La rotación es la nueva narrativa para clientes.</p>
+
+    <div class="chart-container mt-10">
+      <canvas id="rotacionChart" aria-label="Variación interanual de volumen 2025 vs 2024 por categoría de producto derivado" role="img"></canvas>
+    </div>
+    <p class="text-xs text-rm-ink2 text-center mt-3">Variación YoY de volumen 2025 vs 2024 por categoría. Fuentes: FIA · WFE H1 2025 · BIS · Cboe/OCC · CME · Grupo BMV — cifras estimadas con fines ilustrativos.</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6"><p class="font-display font-bold text-rm-navy">FIA</p><p class="text-sm text-[#3c382f] mt-2 leading-relaxed">Volumen global listado 2025: 119.29 mil M de contratos. Aun así <b>futuros +8.6%, energía +30%, metales +24.5%, tasas +2.7%</b>. Hay rotación, no contracción.</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6"><p class="font-display font-bold text-rm-navy">BIS · OTC</p><p class="text-sm text-[#3c382f] mt-2 leading-relaxed">Nocional OTC vigente <b>USD 846 billones</b> a junio 2025, +16% anual. FX global USD 9.6T diarios. OTC es el sistema nervioso de cobertura.</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6"><p class="font-display font-bold text-rm-navy">MexDer</p><p class="text-sm text-[#3c382f] mt-2 leading-relaxed">Ingresos de operación 128 M MXN, +25%. ADV de futuros y swaps <b>+44% vs 2024</b>; divisas +68%, acciones +133%, swaps TIIE +16%. México con momentum real.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARCO REGULATORIO ============ -->
+<section class="border-b border-rm-line bg-rm-soft/60">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-24 reveal">
+    <p class="eyebrow uppercase text-xs font-bold text-rm-navy2">Marco regulatorio · Regulatory framework</p>
+    <h2 class="font-display font-bold text-3xl sm:text-4xl text-rm-ink tracking-tight mt-3 max-w-2xl">Circular 4/2012 <span class="text-rm-navy">de Banco de México.</span></h2>
+    <p class="serif-dek text-xl text-rm-ink mt-6 max-w-3xl leading-relaxed">La capacitación anual en derivados no es una buena práctica: es un requerimiento explícito que debe documentarse cada año.</p>
+    <p class="text-[16px] text-[#3c382f] mt-4 max-w-3xl leading-relaxed">La Circular 4/2012 exige que la <b>dirección general</b> implemente un programa de capacitación continua para personal involucrado en operaciones derivadas. El alcance del requerimiento es amplio:</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(25,25,25,.08)] transition"><p class="eyebrow uppercase text-[10px] font-bold text-rm-navy2">Frente comercial</p><p class="font-display font-bold text-rm-ink mt-2">Front office</p><p class="text-sm text-rm-ink2 mt-2">Traders, sales, estructuradores y mesas de dinero.</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(25,25,25,.08)] transition"><p class="eyebrow uppercase text-[10px] font-bold text-rm-navy2">Operaciones</p><p class="font-display font-bold text-rm-ink mt-2">Middle / back office</p><p class="text-sm text-rm-ink2 mt-2">Confirmación, lifecycle events, settlement, novation.</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(25,25,25,.08)] transition"><p class="eyebrow uppercase text-[10px] font-bold text-rm-navy2">Riesgo y control</p><p class="font-display font-bold text-rm-ink mt-2">Risk · auditoría</p><p class="text-sm text-rm-ink2 mt-2">Administración de riesgos, contraloría interna, auditoría.</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(25,25,25,.08)] transition"><p class="eyebrow uppercase text-[10px] font-bold text-rm-navy2">Soporte</p><p class="font-display font-bold text-rm-ink mt-2">Contabilidad y sistemas</p><p class="text-sm text-rm-ink2 mt-2">Finanzas, sistemas y tecnología de operación.</p></div>
+    </div>
+    <div class="mt-8 bg-rm-dark text-rm-cream rounded-2xl px-7 py-6 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10">
+      <p class="text-sm leading-relaxed"><b class="text-rm-steel2">Contenido obligatorio:</b> normatividad, políticas internas y resiliencia operativa · riesgos financieros y operativos asociados a derivados.</p>
+      <p class="text-sm leading-relaxed sm:border-l sm:border-rm-cream/20 sm:pl-10"><b class="text-rm-steel2">Convertir cumplimiento en ventaja:</b> el programa entrega un <i class="serif-dek">Evidence Pack</i> auditable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 RAZONES / MATRIZ DE IMPACTO ============ -->
+<section class="border-b border-rm-line">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-24 reveal">
+    <p class="eyebrow uppercase text-xs font-bold text-rm-navy2">Why enroll · Matriz de impacto</p>
+    <h2 class="font-display font-bold text-3xl sm:text-4xl text-rm-ink tracking-tight mt-3 max-w-2xl">Diez razones para tomar este programa.</h2>
+    <p class="serif-dek text-lg text-rm-ink2 mt-4 max-w-2xl">Lo que distingue a esta edición de cualquier curso anual de derivados disponible en el mercado mexicano.</p>
+    <div class="grid sm:grid-cols-2 gap-4 mt-10">
+      <div class="flex gap-4 bg-rm-card border border-rm-line rounded-xl p-6"><span class="font-display font-bold text-rm-steel text-lg flex-none">01</span><div><p class="font-display font-semibold text-rm-ink">Cumple Banxico, sin auto-impartirlo</p><p class="text-sm text-[#3c382f] mt-1.5 leading-relaxed">Cubre el requerimiento anual de la Circular 4/2012 con un proveedor externo, evitando el costo y riesgo de diseñar el programa internamente.</p></div></div>
+      <div class="flex gap-4 bg-rm-card border border-rm-line rounded-xl p-6"><span class="font-display font-bold text-rm-steel text-lg flex-none">02</span><div><p class="font-display font-semibold text-rm-ink">Diseñado para tomadores de decisión</p><p class="text-sm text-[#3c382f] mt-1.5 leading-relaxed">Front Office, Risk, Compliance, CRCO, Legal, Operations y Tecnología en una sola conversación. Lenguaje común al cierre del programa.</p></div></div>
+      <div class="flex gap-4 bg-rm-card border border-rm-line rounded-xl p-6"><span class="font-display font-bold text-rm-steel text-lg flex-none">03</span><div><p class="font-display font-semibold text-rm-ink">Lectura ejecutiva del mercado 2023–2025</p><p class="text-sm text-[#3c382f] mt-1.5 leading-relaxed">No teoría: cifras de FIA, WFE, BIS, Cboe, CME y MexDer reordenadas por categoría, traducidas a implicación comercial.</p></div></div>
+      <div class="flex gap-4 bg-rm-card border border-rm-line rounded-xl p-6"><span class="font-display font-bold text-rm-steel text-lg flex-none">04</span><div><p class="font-display font-semibold text-rm-ink">Suitability Matrix entregable</p><p class="text-sm text-[#3c382f] mt-1.5 leading-relaxed">Cada participante sale con la matriz cliente × producto adaptada a su mesa: qué se ofrece, a quién, con qué documentación y disclosure.</p></div></div>
+      <div class="flex gap-4 bg-rm-card border border-rm-line rounded-xl p-6"><span class="font-display font-bold text-rm-steel text-lg flex-none">05</span><div><p class="font-display font-semibold text-rm-ink">Evidence Pack auditable</p><p class="text-sm text-[#3c382f] mt-1.5 leading-relaxed">Asistencia, temario, evaluación, constancia, caso práctico y minuta. Listo para Banxico, comités internos y auditoría externa.</p></div></div>
+      <div class="flex gap-4 bg-rm-card border border-rm-line rounded-xl p-6"><span class="font-display font-bold text-rm-steel text-lg flex-none">06</span><div><p class="font-display font-semibold text-rm-ink">Faculty con cicatrices</p><p class="text-sm text-[#3c382f] mt-1.5 leading-relaxed">Especialistas con trayectoria operativa en bancos globales, exchanges, reguladores y consultoría. No académicos puros.</p></div></div>
+      <div class="flex gap-4 bg-rm-card border border-rm-line rounded-xl p-6"><span class="font-display font-bold text-rm-steel text-lg flex-none">07</span><div><p class="font-display font-semibold text-rm-ink">Cobertura listados y OTC, local y global</p><p class="text-sm text-[#3c382f] mt-1.5 leading-relaxed">Tasas, FX, equity, commodities, crédito, ESG, digital assets. MexDer y referencias internacionales en el mismo marco.</p></div></div>
+      <div class="flex gap-4 bg-rm-card border border-rm-line rounded-xl p-6"><span class="font-display font-bold text-rm-steel text-lg flex-none">08</span><div><p class="font-display font-semibold text-rm-ink">Tecnología y model risk del trade lifecycle</p><p class="text-sm text-[#3c382f] mt-1.5 leading-relaxed">Pricing, margen, colateral, post-trade, data y validación de modelos. Lo que está cambiando en operación, no slogans de IA.</p></div></div>
+      <div class="flex gap-4 bg-rm-card border border-rm-line rounded-xl p-6"><span class="font-display font-bold text-rm-steel text-lg flex-none">09</span><div><p class="font-display font-semibold text-rm-ink">Formato Virtual LIVE de alto contacto</p><p class="text-sm text-[#3c382f] mt-1.5 leading-relaxed">5 sesiones de 3 horas, en vivo, con Q&amp;A directo. Sin viaje, sin oficinas, sin costos logísticos para el participante.</p></div></div>
+      <div class="flex gap-4 bg-rm-card border border-rm-line rounded-xl p-6"><span class="font-display font-bold text-rm-steel text-lg flex-none">10</span><div><p class="font-display font-semibold text-rm-ink">ROI medible en menos de un trimestre</p><p class="text-sm text-[#3c382f] mt-1.5 leading-relaxed">El costo de una sola operación mal estructurada cubre la inscripción de toda la mesa por años.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CURRICULUM ============ -->
+<section id="curriculum" class="border-b border-rm-line bg-rm-soft/60">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-24 reveal">
+    <p class="eyebrow uppercase text-xs font-bold text-rm-navy2">Estructura · Curriculum mix 40 / 25 / 20 / 15</p>
+    <h2 class="font-display font-bold text-3xl sm:text-4xl text-rm-ink tracking-tight mt-3 max-w-2xl">Cinco módulos. <span class="text-rm-navy">Un sistema.</span></h2>
+    <p class="serif-dek text-lg text-rm-ink2 mt-4 max-w-3xl leading-relaxed">Los cinco módulos no son temas independientes. Forman una secuencia pedagógica — de mercado a regulación — para que el participante salga capacitado para operar, no solamente informado.</p>
+
+    <!-- Curriculum mix bars -->
+    <div class="mt-10 grid sm:grid-cols-4 gap-3 text-sm">
+      <div class="bg-rm-card border border-rm-line rounded-xl p-5"><div class="h-1.5 rounded-full bg-rm-navy w-full"></div><p class="font-display font-bold text-2xl text-rm-navy mt-3">40%</p><p class="font-semibold text-rm-ink">Producto y mercado</p><p class="text-xs text-rm-ink2 mt-1">Listados y OTC · evolución 2023–2025 · México · 6 hrs</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-5"><div class="h-1.5 rounded-full bg-rm-ink w-[62%]"></div><p class="font-display font-bold text-2xl text-rm-navy mt-3">25%</p><p class="font-semibold text-rm-ink">Cliente y servicio</p><p class="text-xs text-rm-ink2 mt-1">Sell-side advisory · suitability · soluciones · 3.75 hrs</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-5"><div class="h-1.5 rounded-full bg-rm-steel w-[50%]"></div><p class="font-display font-bold text-2xl text-rm-navy mt-3">20%</p><p class="font-semibold text-rm-ink">Tecnología</p><p class="text-xs text-rm-ink2 mt-1">Post-trade · data · model risk · pagos · digital · 3 hrs</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-5"><div class="h-1.5 rounded-full bg-rm-red w-[38%]"></div><p class="font-display font-bold text-2xl text-rm-navy mt-3">15%</p><p class="font-semibold text-rm-ink">Regulación y evidencia</p><p class="text-xs text-rm-ink2 mt-1">Banxico · CNBV · IOSCO · ISDA · evidence pack · 2.25 hrs</p></div>
+    </div>
+
+    <!-- Acordeón de módulos -->
+    <div class="mt-10 space-y-4">
+
+      <details class="mod" open>
+        <summary>
+          <span class="font-display font-extrabold text-2xl text-rm-steel flex-none w-12">01</span>
+          <span><span class="font-display font-bold text-rm-ink text-lg block">Market Pulse &amp; Product Radar</span><span class="text-xs text-rm-ink2 eyebrow uppercase font-semibold">3 hrs · Diagnóstico · 2023–2025 Listed &amp; OTC</span></span>
+          <span class="chev">+</span>
+        </summary>
+        <div class="px-6 sm:px-[5.5rem] pb-7 text-[15px] text-[#3c382f] leading-relaxed space-y-4">
+          <p><b class="text-rm-navy">Objetivo:</b> comprender la evolución reciente de los mercados globales y mexicanos de derivados, distinguiendo entre volumen contractual, nocional, valor económico, open interest, liquidez, volatilidad, uso de cobertura y concentración por regiones, bolsas y subyacentes.</p>
+          <ul class="space-y-2 list-none">
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Evolución 2023–2025</b> de futuros y opciones listadas globales; lectura comparada FIA vs. WFE.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Mercado OTC:</b> tasas, FX, swaps, forwards, opciones, cross-currency swaps y derivados de crédito.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>México:</b> MexDer, swaps TIIE, futuros del dólar, equity derivatives, Asigna, SIF ICAP y mercado OTC local.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Productos al alza:</b> tasas, FX, energía, metales, commodities, 0DTE options, flex options, micro contracts, ETF options, equity index options, digital asset derivatives y carbon/climate-linked derivatives.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Productos a vigilar:</b> estructuras apalancadas, opciones vendidas, estrategias de volatilidad corta, barreras, autocallables, accumulators y productos con path dependency.</li>
+          </ul>
+          <p class="text-sm text-rm-ink2"><b class="text-rm-ink">Enfocado a:</b> traders, sales de derivados, mesas de dinero, tesorería, estructuración, market risk, ALM, asset management, áreas de producto y comités de nuevos productos.</p>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary>
+          <span class="font-display font-extrabold text-2xl text-rm-steel flex-none w-12">02</span>
+          <span><span class="font-display font-bold text-rm-ink text-lg block">Product Architecture</span><span class="text-xs text-rm-ink2 eyebrow uppercase font-semibold">3 hrs · Diseño · OTC y listados como soluciones de cobertura</span></span>
+          <span class="chev">+</span>
+        </summary>
+        <div class="px-6 sm:px-[5.5rem] pb-7 text-[15px] text-[#3c382f] leading-relaxed space-y-4">
+          <p><b class="text-rm-navy">Objetivo:</b> diseñar soluciones de derivados alineadas con riesgos reales de clientes, evitando la venta aislada de productos y privilegiando estructuras simples, explicables, auditables y consistentes con el perfil financiero del cliente.</p>
+          <ul class="space-y-2 list-none">
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>FX</b> — forwards, NDFs, window forwards, collars, participating forwards, opciones plain vanilla, coberturas escalonadas.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Tasas</b> — swaps, caps, floors, collars, swaptions, amortizing swaps, cobertura de deuda variable.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Commodities</b> — futuros, opciones, swaps de precio, coberturas de insumos, energía, metales y agrícolas.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Equity &amp; wealth</b> — protective puts, collars, covered calls, portfolio overlays, ETF options.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Credit &amp; funding</b> — credit derivatives, basis, spread, funding valuation y contraparte.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Digital assets y ESG</b> — derivados sobre criptoactivos, ISDA, carbono, energía, clima y transición.</li>
+          </ul>
+          <p class="bg-rm-dark text-rm-cream rounded-xl px-5 py-4 text-sm leading-relaxed"><b class="text-rm-steel2">Entregable del módulo — Suitability &amp; Complexity Matrix:</b> <i class="serif-dek">qué producto se puede ofrecer a qué cliente, con qué documentación, disclosure, pérdida máxima, liquidez y margen.</i></p>
+          <p class="text-sm text-rm-ink2"><b class="text-rm-ink">Enfocado a:</b> sales, estructuradores, traders, private bankers, relationship managers, áreas de producto, legal, risk advisory y comités de aprobación de nuevos productos.</p>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary>
+          <span class="font-display font-extrabold text-2xl text-rm-steel flex-none w-12">03</span>
+          <span><span class="font-display font-bold text-rm-ink text-lg block">Client Solutions &amp; Sell-Side Advisory</span><span class="text-xs text-rm-ink2 eyebrow uppercase font-semibold">3 hrs · Relación · Volatilidad traducida a valor comercial</span></span>
+          <span class="chev">+</span>
+        </summary>
+        <div class="px-6 sm:px-[5.5rem] pb-7 text-[15px] text-[#3c382f] leading-relaxed space-y-4">
+          <p><b class="text-rm-navy">Objetivo:</b> traducir volatilidad de mercado en conversaciones comerciales de alto valor para corporativos, PYMEs, family offices, HNWIs, wealth management, fondos e institucionales.</p>
+          <blockquote class="serif-dek text-lg text-rm-navy border-l-2 border-rm-steel pl-5 leading-relaxed">«Los clientes no buscan "un derivado". Buscan certidumbre de flujo, protección de margen, reducción de volatilidad y un banco que les explique riesgos sin esconder convexidad ni colateral.»</blockquote>
+          <ul class="space-y-2 list-none">
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Insights de mercado:</b> PwC — para tesorerías corporativas el riesgo FX es la exposición más crítica (83% de encuestados), seguido por tasas (72%) y commodities (39%).</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel">El modelo <b>"cash first"</b> exige visibilidad en tiempo real, forecasting y control centralizado.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel">Capgemini estima una transferencia patrimonial global de <b>USD 83.5 trillones</b> hacia generaciones más jóvenes hacia 2048; HNWIs de nueva generación prefieren engagement digital y estrategias personalizadas.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel">UBS 2025 recoge perspectivas de más de 300 family offices con <b>USD 651 mil millones</b> en activos representados.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Lo que sí buscan:</b> certidumbre de flujo de efectivo, protección de margen, reducción de volatilidad contable o económica y acceso eficiente a liquidez y mercados.</li>
+          </ul>
+          <p class="text-sm text-rm-ink2"><b class="text-rm-ink">Enfocado a:</b> corporate banking, treasury sales, FX sales, rates sales, private banking, wealth management, investment advisory, product specialists, compliance comercial y relación institucional.</p>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary>
+          <span class="font-display font-extrabold text-2xl text-rm-steel flex-none w-12">04</span>
+          <span><span class="font-display font-bold text-rm-ink text-lg block">Technology, Data, Post-Trade &amp; Risk Infrastructure</span><span class="text-xs text-rm-ink2 eyebrow uppercase font-semibold">3 hrs · Ejecución · La nueva ventaja ocurre después del trade</span></span>
+          <span class="chev">+</span>
+        </summary>
+        <div class="px-6 sm:px-[5.5rem] pb-7 text-[15px] text-[#3c382f] leading-relaxed space-y-4">
+          <p><b class="text-rm-navy">Objetivo:</b> entender cómo tecnología, datos, automatización, infraestructura post-trade, pagos, colateral, marginación, modelos y ciberresiliencia están redefiniendo la operación de derivados.</p>
+          <ul class="space-y-2 list-none">
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Trading &amp; data</b> — trading electrónico, APIs, execution algorítmica y conectividad; market data (costos, calidad, latencia, gobernanza y monetización).</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>AI/ML en derivados</b> — pricing assist, scenario generation, anomaly detection, margin forecasting, surveillance y client intelligence.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Model risk management</b> — validación, backtesting, stress testing, XVA, curvas, volatilidad, correlaciones y wrong-way risk.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Post-trade</b> — confirmación, matching, reconciliación, STP, settlement, lifecycle events, compression y novation; marginación y colateral (initial margin, variation margin, CSA, elegibilidad, haircuts, optimización y liquidez).</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Pagos y digital</b> — T+1, T+0, atomic settlement, tokenized deposits, stablecoins institucionales y DLT; activos digitales (documentación, custodia, riesgos operativos, smart contracts y riesgos legales).</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Resiliencia operativa</b> — ciberseguridad y continuidad de trading, confirmación, liquidación, riesgo y sistemas.</li>
+          </ul>
+          <p class="text-sm text-rm-ink2"><b class="text-rm-ink">Enfocado a:</b> COO, CTO, CIO, operaciones, middle/back office, collateral management, risk systems, model validation, market data, finanzas, tesorería, auditoría interna y continuidad de negocio.</p>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary>
+          <span class="font-display font-extrabold text-2xl text-rm-steel flex-none w-12">05</span>
+          <span><span class="font-display font-bold text-rm-ink text-lg block">Regulation, Governance &amp; Annual Evidence Pack</span><span class="text-xs text-rm-ink2 eyebrow uppercase font-semibold">3 hrs · Cumplimiento · De capacitación a prueba regulatoria</span></span>
+          <span class="chev">+</span>
+        </summary>
+        <div class="px-6 sm:px-[5.5rem] pb-7 text-[15px] text-[#3c382f] leading-relaxed space-y-4">
+          <p><b class="text-rm-navy">Objetivo:</b> mapear los cambios regulatorios globales y locales más importantes en derivados y convertir el programa en evidencia documental útil para auditoría, cumplimiento, comités internos y requerimientos regulatorios.</p>
+          <ul class="space-y-2 list-none">
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Marco mexicano</b> — Banxico: autorización, requerimientos operativos, capacitación, estándares profesionales, auditoría y reportes. CNBV: gobierno corporativo, control interno, suitability, conducta, conflictos de interés, documentación y supervisión.</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Estándares globales</b> — IOSCO / BIS / CPMI (principios de infraestructuras, CCPs, marginación y riesgo sistémico); ISDA (Master Agreement, CSA, definiciones, documentación digital, close-out netting, eventos de incumplimiento); Dodd-Frank, EMIR, MiFID/MiFIR (clearing, reporting, transparency, swap dealers, trade repositories).</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Conducta y nuevos riesgos</b> — digital assets y tokenización ("same activity, same risk, same regulation"; custodia, liquidación y mercado); conducta de mercado (pre-hedging, best execution, comunicaciones electrónicas, vigilancia, market abuse).</li>
+            <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Evidencia anual</b> — asistencia, temario, evaluación, constancias individuales, caso práctico aplicado, fuente de actualización documentada y minuta ejecutiva.</li>
+          </ul>
+          <p class="text-sm text-rm-ink2"><b class="text-rm-ink">Enfocado a:</b> compliance, legal, auditoría interna, riesgos, contraloría, dirección general, comités de auditoría y de riesgos, operaciones, front office y responsables de capacitación regulatoria.</p>
+        </div>
+      </details>
+
+    </div>
+
+    <!-- Program flow -->
+    <div class="mt-12 bg-rm-card border border-rm-line rounded-2xl p-7 sm:p-9">
+      <p class="eyebrow uppercase text-[11px] font-bold text-rm-navy2">Mapa · Program flow — de mercado a regulación</p>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-5 gap-4 text-center text-xs">
+        <div><span class="inline-flex w-11 h-11 rounded-full bg-rm-red text-rm-cream font-display font-bold items-center justify-center">01</span><p class="font-semibold text-rm-ink mt-2">Market Pulse</p><p class="text-rm-ink2 serif-dek">¿Qué se mueve?</p></div>
+        <div><span class="inline-flex w-11 h-11 rounded-full bg-rm-ink text-rm-cream font-display font-bold items-center justify-center">02</span><p class="font-semibold text-rm-ink mt-2">Product</p><p class="text-rm-ink2 serif-dek">¿Cómo se diseña?</p></div>
+        <div><span class="inline-flex w-11 h-11 rounded-full bg-rm-red text-rm-cream font-display font-bold items-center justify-center">03</span><p class="font-semibold text-rm-ink mt-2">Client</p><p class="text-rm-ink2 serif-dek">¿Cómo se vende?</p></div>
+        <div><span class="inline-flex w-11 h-11 rounded-full bg-rm-ink text-rm-cream font-display font-bold items-center justify-center">04</span><p class="font-semibold text-rm-ink mt-2">Tech &amp; Data</p><p class="text-rm-ink2 serif-dek">¿Cómo se opera?</p></div>
+        <div><span class="inline-flex w-11 h-11 rounded-full bg-rm-red text-rm-cream font-display font-bold items-center justify-center">05</span><p class="font-semibold text-rm-ink mt-2">Regulation</p><p class="text-rm-ink2 serif-dek">¿Cómo se supervisa?</p></div>
+      </div>
+      <p class="text-sm text-[#3c382f] mt-6 leading-relaxed text-center max-w-3xl mx-auto">El programa se divide en <b>dos fases lógicas</b>: la <i class="serif-dek">Fase I (Mercado y Cliente)</i> arma el lenguaje comercial y técnico; la <i class="serif-dek">Fase II (Operación)</i> aterriza la infraestructura tecnológica y el marco regulatorio que sostienen el negocio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENTREGABLES ============ -->
+<section class="border-b border-rm-line">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-24 reveal">
+    <p class="eyebrow uppercase text-xs font-bold text-rm-navy2">Evidence Pack · Compliance deliverables</p>
+    <h2 class="font-display font-bold text-3xl sm:text-4xl text-rm-ink tracking-tight mt-3 max-w-2xl">Lo que se entrega.</h2>
+    <p class="serif-dek text-lg text-rm-ink2 mt-4 max-w-3xl leading-relaxed">El programa no termina en el aula. Termina en una carpeta documentada de evidencia que pasa cualquier revisión interna o regulatoria — lista para Banxico y comités internos.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10 text-sm">
+      <div class="bg-rm-card border-l-4 border-rm-navy border-y border-r border-y-rm-line border-r-rm-line rounded-r-xl p-5"><p class="eyebrow uppercase text-[10px] font-bold text-rm-steel">Doc 01</p><p class="font-display font-semibold text-rm-ink mt-1">Lista de asistencia firmada</p><p class="text-rm-ink2 mt-1.5">Por sesión y módulo, con cargo y área del participante.</p></div>
+      <div class="bg-rm-card border-l-4 border-rm-navy border-y border-r border-y-rm-line border-r-rm-line rounded-r-xl p-5"><p class="eyebrow uppercase text-[10px] font-bold text-rm-steel">Doc 02</p><p class="font-display font-semibold text-rm-ink mt-1">Temario detallado</p><p class="text-rm-ink2 mt-1.5">5 módulos × 15 horas, con desglose de horas por tema.</p></div>
+      <div class="bg-rm-card border-l-4 border-rm-navy border-y border-r border-y-rm-line border-r-rm-line rounded-r-xl p-5"><p class="eyebrow uppercase text-[10px] font-bold text-rm-steel">Doc 03</p><p class="font-display font-semibold text-rm-ink mt-1">Evaluación de aprendizaje</p><p class="text-rm-ink2 mt-1.5">Pre y post-test, calificación individual y reporte por área.</p></div>
+      <div class="bg-rm-card border-l-4 border-rm-navy border-y border-r border-y-rm-line border-r-rm-line rounded-r-xl p-5"><p class="eyebrow uppercase text-[10px] font-bold text-rm-steel">Doc 04</p><p class="font-display font-semibold text-rm-ink mt-1">Constancia individual</p><p class="text-rm-ink2 mt-1.5">Por participante, con horas, módulos y fecha de emisión.</p></div>
+      <div class="bg-rm-card border-l-4 border-rm-navy border-y border-r border-y-rm-line border-r-rm-line rounded-r-xl p-5"><p class="eyebrow uppercase text-[10px] font-bold text-rm-steel">Doc 05</p><p class="font-display font-semibold text-rm-ink mt-1">Caso práctico aplicado</p><p class="text-rm-ink2 mt-1.5">Suitability Matrix adaptada y aprobada por Compliance.</p></div>
+      <div class="bg-rm-card border-l-4 border-rm-navy border-y border-r border-y-rm-line border-r-rm-line rounded-r-xl p-5"><p class="eyebrow uppercase text-[10px] font-bold text-rm-steel">Doc 06</p><p class="font-display font-semibold text-rm-ink mt-1">Fuente de actualización</p><p class="text-rm-ink2 mt-1.5">Bibliografía, tablas FIA/WFE/BIS y referencias regulatorias.</p></div>
+      <div class="bg-rm-card border-l-4 border-rm-navy border-y border-r border-y-rm-line border-r-rm-line rounded-r-xl p-5"><p class="eyebrow uppercase text-[10px] font-bold text-rm-steel">Doc 07</p><p class="font-display font-semibold text-rm-ink mt-1">Minuta ejecutiva</p><p class="text-rm-ink2 mt-1.5">Resumen de 4 páginas para dirección general y comités.</p></div>
+      <div class="bg-rm-card border-l-4 border-rm-navy border-y border-r border-y-rm-line border-r-rm-line rounded-r-xl p-5"><p class="eyebrow uppercase text-[10px] font-bold text-rm-steel">Doc 08</p><p class="font-display font-semibold text-rm-ink mt-1">Material del programa</p><p class="text-rm-ink2 mt-1.5">Slides, lecturas y datos en formato consultable post-programa.</p></div>
+    </div>
+    <div class="mt-8 bg-rm-dark text-rm-cream rounded-2xl px-7 py-6">
+      <p class="serif-dek text-lg leading-relaxed">«Si no está documentado, no sucedió.» <span class="text-[#a59f92] not-italic font-sans text-sm block mt-1">El Evidence Pack convierte el programa en un activo auditable, no en un evento.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FACULTY ============ -->
+<section id="faculty" class="border-b border-rm-line bg-rm-soft/60">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-24 reveal">
+    <p class="eyebrow uppercase text-xs font-bold text-rm-navy2">Faculty</p>
+    <h2 class="font-display font-bold text-3xl sm:text-4xl text-rm-ink tracking-tight mt-3 max-w-2xl">Especialistas con trayectoria operativa. <span class="text-rm-navy">No académicos puros.</span></h2>
+    <p class="text-[17px] text-[#3c382f] mt-6 max-w-3xl leading-relaxed">Programa impartido por <b>especialistas senior de RiskMathics y faculty internacional</b> con trayectoria en:</p>
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 mt-8 text-center">
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6"><p class="font-display font-bold text-rm-navy">Bancos globales</p><p class="text-xs text-rm-ink2 mt-1.5">Mesas de derivados, riesgo y estructuración</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6"><p class="font-display font-bold text-rm-navy">Casas de bolsa</p><p class="text-xs text-rm-ink2 mt-1.5">Operación local listados y OTC</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6"><p class="font-display font-bold text-rm-navy">Exchanges</p><p class="text-xs text-rm-ink2 mt-1.5">Infraestructura de mercado y clearing</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6"><p class="font-display font-bold text-rm-navy">Reguladores</p><p class="text-xs text-rm-ink2 mt-1.5">Supervisión y marco normativo</p></div>
+      <div class="bg-rm-card border border-rm-line rounded-xl p-6 col-span-2 lg:col-span-1"><p class="font-display font-bold text-rm-navy">Consultoría</p><p class="text-xs text-rm-ink2 mt-1.5">Firmas de risk management</p></div>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-6 mt-10 text-[15px] text-[#3c382f]">
+      <div class="space-y-3">
+        <p class="font-display font-semibold text-rm-ink">Modalidad</p>
+        <ul class="space-y-2">
+          <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Virtual LIVE</b> — sesiones en vivo, interactivas, vía plataforma propietaria.</li>
+          <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Horario</b> — 3 horas por sesión · CDMX (horario por confirmar).</li>
+          <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Cohorte abierta</b> — bancos, casas de bolsa, tesorerías corporativas y áreas de riesgo.</li>
+          <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Idioma</b> — español, materiales y anexos bilingües ES/EN.</li>
+          <li class="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-rm-steel"><b>Acceso</b> — grabaciones disponibles 30 días post-programa.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display font-semibold text-rm-ink mb-3">Calendario · Agosto–Septiembre 2026</p>
+        <div class="flex flex-wrap gap-3">
+          <div class="bg-rm-dark text-rm-cream rounded-lg px-4 py-3 text-center min-w-[64px]"><p class="font-display font-bold text-xl leading-none">24</p><p class="text-[10px] eyebrow uppercase mt-1 text-[#a59f92]">Ago</p></div>
+          <div class="bg-rm-dark text-rm-cream rounded-lg px-4 py-3 text-center min-w-[64px]"><p class="font-display font-bold text-xl leading-none">25</p><p class="text-[10px] eyebrow uppercase mt-1 text-[#a59f92]">Ago</p></div>
+          <div class="bg-rm-dark text-rm-cream rounded-lg px-4 py-3 text-center min-w-[64px]"><p class="font-display font-bold text-xl leading-none">27</p><p class="text-[10px] eyebrow uppercase mt-1 text-[#a59f92]">Ago</p></div>
+          <div class="bg-rm-dark text-rm-cream rounded-lg px-4 py-3 text-center min-w-[64px]"><p class="font-display font-bold text-xl leading-none">31</p><p class="text-[10px] eyebrow uppercase mt-1 text-[#a59f92]">Ago</p></div>
+          <div class="bg-rm-navy text-rm-cream rounded-lg px-4 py-3 text-center min-w-[64px]"><p class="font-display font-bold text-xl leading-none">01</p><p class="text-[10px] eyebrow uppercase mt-1 text-rm-steel2">Sep</p></div>
+        </div>
+        <p class="text-sm text-rm-ink2 mt-4">5 sesiones · 15 horas · 3 horas por sesión · CDMX</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FRANJA DE URGENCIA ============ -->
+<section class="bg-rm-red text-rm-cream">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+    <div>
+      <p class="eyebrow uppercase text-[11px] font-bold text-rm-cream/80">Cupo limitado · Cohorte única 2026</p>
+      <p class="font-display font-bold text-xl sm:text-2xl mt-1">Inicio: lunes 24 de agosto de 2026 · Virtual LIVE</p>
+      <p class="text-sm text-rm-cream/85 mt-1">Grupos institucionales con descuento bajo solicitud. Asegura los lugares de tu mesa antes del cierre de cohorte.</p>
+    </div>
+    <a href="#rm-enroll" class="flex-none bg-rm-cream text-rm-red font-display font-bold px-8 py-4 rounded-full hover:-translate-y-0.5 transition shadow-lg">Asegurar mi lugar</a>
+  </div>
+</section>
+
+<!-- ===== RISKMATHICS SALES MACHINE (inyectable) ===== -->
+<section id="rm-enroll" style="background:linear-gradient(135deg,#16406b,#0f2d4e);color:#fff;padding:64px 20px;font-family:'Inter',Arial,sans-serif;">
+  <div style="max-width:660px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:28px;">
+      <div style="color:#a8c6e6;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
+      <h2 style="font-size:34px;margin:12px 0 8px;font-weight:800;line-height:1.15;font-family:'Poppins','Inter',Arial,sans-serif;">Asegura tu lugar</h2>
+      <p style="color:#c2cee0;font-size:16px;margin:0;">Déjanos tus datos, verifica tu WhatsApp y recibe el temario completo. Sin compromiso.</p>
+    </div>
+    <div style="background:#faf6ec;color:#1f2937;border-radius:18px;padding:32px;box-shadow:0 30px 70px rgba(0,0,0,.3);">
+      <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:12px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <input name="nombre" placeholder="Nombre" required style="padding:13px 14px;border:1px solid #d3cab4;border-radius:10px;font-size:15px;background:#fffdf8;">
+          <input name="apellido" placeholder="Apellido" style="padding:13px 14px;border:1px solid #d3cab4;border-radius:10px;font-size:15px;background:#fffdf8;">
+        </div>
+        <input type="email" name="email" placeholder="Email corporativo" required style="padding:13px 14px;border:1px solid #d3cab4;border-radius:10px;font-size:15px;background:#fffdf8;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <input name="puesto" placeholder="Puesto" style="padding:13px 14px;border:1px solid #d3cab4;border-radius:10px;font-size:15px;background:#fffdf8;">
+          <input name="empresa" placeholder="Institución / Empresa" style="padding:13px 14px;border:1px solid #d3cab4;border-radius:10px;font-size:15px;background:#fffdf8;">
+        </div>
+        <input name="whatsapp" placeholder="WhatsApp (ej. +52...)" required style="padding:13px 14px;border:1px solid #d3cab4;border-radius:10px;font-size:15px;background:#fffdf8;">
+        <button type="submit" style="background:linear-gradient(135deg,#a8c6e6,#82a9d2);color:#0a1c30;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;">Quiero el temario</button>
+        <p style="font-size:12px;color:#8a94a6;margin:0;text-align:center;">🔒 Te enviamos un código por SMS para verificar. Datos protegidos.</p>
+      </form>
+      <div id="rm-verify" style="display:none;"></div>
+      <div id="rm-thanks" style="display:none;background:#ecfdf5;border:1px solid #6ee7b7;color:#065f46;padding:20px;border-radius:14px;font-size:15px;">✅ <b>¡Listo!</b> Recibimos y verificamos tus datos. Te enviamos el temario y un asesor te contactará.</div>
+      <div style="margin-top:24px;padding-top:22px;border-top:1px solid #e2dac6;text-align:center;">
+        <div style="font-size:13px;color:#6b7280;letter-spacing:1px;">O INSCRÍBETE Y PAGA DIRECTO</div>
+        <div style="font-size:30px;font-weight:800;color:#0f2d4e;margin:8px 0 4px;font-family:'Poppins','Inter',Arial,sans-serif;">MXN $<span>35,000</span> <span style="font-size:14px;color:#6b7280;font-weight:500;">+ IVA</span></div>
+        <div style="display:grid;gap:10px;margin-top:16px;">
+          <a id="rm-paypal" href="" target="_blank" rel="noopener" style="background:#82a9d2;color:#0a1c30;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;">Pagar con PayPal · 6 MSI</a>
+          <a id="rm-stripe" href="https://buy.stripe.com/aFa5kvfPVaKY9IJcfn2Ry2e" target="_blank" rel="noopener" style="background:#0f2d4e;color:#fff;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;">Pagar con tarjeta · Stripe</a>
+        </div>
+        <p style="font-size:11px;color:#9aa4b4;margin-top:12px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+const RM_CFG={id:"derivadosanual",folleto:"https://riskmathics-folletos-2026.s3.amazonaws.com/derivados-anual-2026.pdf",paypal:"",stripe:"https://buy.stripe.com/aFa5kvfPVaKY9IJcfn2Ry2e"};
+const RM_VURL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/verify-lead";
+const RM_VKEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmZmRzZ3ZnY3Ztb2pvYmZpdWF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzOTQ0NzQsImV4cCI6MjA5MDk3MDQ3NH0.7VKn7st3POLRTLIXx9Y4gRjXbh8v_BKXblc7vFIVu-U";
+let RM_LEAD=null;
+(function(){var pp=document.getElementById('rm-paypal');if(pp&&!RM_CFG.paypal)pp.style.display='none';var sp=document.getElementById('rm-stripe');if(sp&&!RM_CFG.stripe)sp.style.display='none';})();
+async function rmPost(p){const r=await fetch(RM_VURL,{method:"POST",headers:{"Content-Type":"application/json","apikey":RM_VKEY,"Authorization":"Bearer "+RM_VKEY},body:JSON.stringify(p)});return r.json();}
+async function rmSubmit(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));let phone=(d.whatsapp||"").trim().replace(/[\s\-()]/g,"");if(phone&&!phone.startsWith("+"))phone="+52"+phone.replace(/^0+/,"");if(!phone||phone.length<10){alert("Escribe tu WhatsApp con lada (ej +52...).");return false;}d.phone=phone;d.curso=RM_CFG.id;d.folleto=RM_CFG.folleto;RM_LEAD=d;const b=f.querySelector('button[type=submit]');b.textContent="Enviando código...";b.disabled=true;let res;try{res=await rmPost({action:"start",phone:phone,channel:"sms"});}catch(_){res={};}if(res&&(res.status==="pending"||res.ok)){f.style.display="none";rmShowCode(phone);}else{b.textContent="Quiero el temario";b.disabled=false;alert("No pudimos enviar el código. Revisa tu número.");}return false;}
+function rmShowCode(phone){var c=document.getElementById('rm-verify');c.innerHTML='<p style="margin:0 0 12px;font-size:15px;color:#1f2937;">📲 Te enviamos un código por SMS a <b>'+phone+'</b>. Ingrésalo:</p><input id="rm-otp" inputmode="numeric" placeholder="Código de 6 dígitos" style="width:100%;padding:14px;border:1px solid #d3cab4;border-radius:10px;font-size:22px;text-align:center;letter-spacing:8px;margin-bottom:12px;"><button type="button" onclick="rmVerify()" style="width:100%;background:linear-gradient(135deg,#a8c6e6,#82a9d2);color:#0a1c30;font-weight:800;font-size:16px;border:none;padding:14px;border-radius:10px;cursor:pointer;">Verificar y recibir temario</button><p id="rm-vmsg" style="font-size:12px;color:#8a94a6;margin-top:8px;"></p>';c.style.display="block";document.getElementById('rm-otp').focus();}
+async function rmVerify(){var code=(document.getElementById('rm-otp').value||"").trim();var m=document.getElementById('rm-vmsg');if(code.length<4){m.textContent="Escribe el código completo.";return;}m.textContent="Verificando...";var res;try{res=await rmPost({action:"check",phone:RM_LEAD.phone,code:code,email:RM_LEAD.email,nombre:RM_LEAD.nombre,apellido:RM_LEAD.apellido,puesto:RM_LEAD.puesto,empresa:RM_LEAD.empresa,curso:RM_CFG.id,folleto:RM_CFG.folleto});}catch(_){res={};}if(res&&res.verified){document.getElementById('rm-verify').style.display="none";document.getElementById('rm-thanks').style.display="block";if(RM_CFG.folleto)window.open(RM_CFG.folleto,'_blank');}else{m.textContent="Código incorrecto o expirado. Intenta de nuevo.";}}
+</script>
+<!-- ===== /SALES MACHINE ===== -->
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-rm-dark text-[#a59f92]">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14 flex flex-col sm:flex-row justify-between gap-6 text-sm">
+    <div>
+      <p class="font-display font-bold tracking-[.2em] text-rm-cream text-xs">RISKMATHICS FINANCIAL INSTITUTE</p>
+      <p class="serif-dek mt-2">Learn. Apply. <span class="text-rm-steel">Profit.</span></p>
+      <p class="mt-3 text-xs">Financial Innovation &amp; Risk Management · Ciudad de México</p>
+    </div>
+    <div class="sm:text-right text-xs leading-relaxed">
+      <p>Global Derivatives Annual Executive Program · Edición 2026</p>
+      <p class="mt-1">contacto@riskmathics.com · <a href="https://riskmathics.com" class="underline decoration-rm-steel/50 hover:text-rm-cream transition">riskmathics.com</a></p>
+      <p class="mt-3 text-[#6b6458]">© 2026 RiskMathics Financial Institute. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Chart.js — rotación 2025 vs 2024 por categoría */
+(function(){
+  const ctx = document.getElementById('rotacionChart');
+  if(!ctx || typeof Chart === 'undefined') return;
+  const labels = ['MexDer ADV (futuros y swaps)','Energía','Opciones US (Cboe)','Metales','OTC nocional (BIS)','Futuros globales','Tasas','ETD global (total)'];
+  const data = [44, 30, 26, 24.5, 16, 8.6, 2.7, -42.2];
+  const colors = data.map(v => v >= 20 ? '#c8332e' : (v >= 0 ? '#0f2d4e' : '#9a938a'));
+  new Chart(ctx, {
+    type: 'bar',
+    data: { labels: labels, datasets: [{ data: data, backgroundColor: colors, borderRadius: 4, barPercentage: .72, categoryPercentage: .78 }] },
+    options: {
+      indexAxis: 'y',
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        title: { display: true, text: 'VARIACIÓN YOY · VOLUMEN 2025 VS 2024 (%)', color: '#191919', font: { family: 'Poppins', size: 13, weight: '700' }, padding: { bottom: 14 } },
+        tooltip: { callbacks: { label: (c) => (c.raw > 0 ? '+' : '') + c.raw + '% vs 2024' } }
+      },
+      scales: {
+        x: { grid: { color: '#e2dac6' }, ticks: { color: '#6b6458', font: { family: 'Inter', size: 11 }, callback: v => v + '%' } },
+        y: { grid: { display: false }, ticks: { color: '#191919', font: { family: 'Inter', size: 11.5, weight: '600' } } }
+      }
+    }
+  });
+})();
+
+/* Reveal on scroll */
+const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) x.target.classList.add('in'); }), { threshold: .1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
