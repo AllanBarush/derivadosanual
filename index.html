@@ -521,7 +521,9 @@ tailwind.config = {
  <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=derivadosanual" target="_blank" rel="noopener" style="background:#82A9D2;color:#1b1710;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:15px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con PayPal</a>
  <a id="rm-stripe" href="https://buy.stripe.com/7sY7sDgTZ06k4op1AJ2Rz30" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #0f2d4e;color:#0f2d4e;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
  </div>
- <p style="font-size:10px;color:#b3bcc9;margin-top:16px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
+ <p style="font-size:11px;color:#8fa2b8;margin-top:14px;font-family:'Lora',Georgia,serif;font-style:italic;">M&aacute;s de 100,000 profesionales formados en 25 a&ntilde;os &middot; BANXICO, CNBV, AFOREs y la banca de LATAM</p>
+<p style="font-size:10.5px;color:#9aa4b4;margin-top:6px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Meses sin intereses disponibles con PayPal</p>
+<p style="font-size:10px;color:#b3bcc9;margin-top:16px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
  </div>
  </div>
  </div>
@@ -567,6 +569,7 @@ else{m.textContent="Códigos incorrectos o expirados. Intenta de nuevo.";}}
  <p class="font-display text-[11px] text-pw-mist/70 tracking-widest uppercase mt-6">Programa Ejecutivo de Banca Patrimonial Holística · Nivel II, Avanzado · Virtual LIVE · Noviembre 2026</p>
  <p class="font-display text-[11px] text-pw-mist/50 tracking-widest uppercase mt-2">Contacto: growth@riskmathics.com</p>
  </div>
+<span id="rm-social" style="display:block;margin-top:6px"><a href="https://www.linkedin.com/in/riskmathicsfi/" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="https://x.com/RiskMathicsFI" target="_blank" rel="noopener">X</a> &middot; <a href="https://www.youtube.com/@RiskMathicsFI" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.instagram.com/riskmathics_financial/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.facebook.com/riskmathicsfi/" target="_blank" rel="noopener">Facebook</a> &middot; <a href="https://www.strava.com/clubs/955042" target="_blank" rel="noopener">Strava</a></span>
 </footer>
 
 <script>
@@ -612,5 +615,6 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 </script>
 <script>(function(){var U="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/rm-hit";function h(e){var d=JSON.stringify({slug:"derivadosanual",ev:e});try{navigator.sendBeacon(U,d)}catch(_){try{fetch(U,{method:"POST",body:d,keepalive:true})}catch(__){}}}h("view");document.addEventListener("click",function(ev){var a=ev.target&&ev.target.closest?ev.target.closest("a"):null;if(!a)return;var href=a.href||"";if(href.indexOf("buy.stripe.com")>=0)h("stripe");else if(href.indexOf("paypal-pay")>=0)h("paypal");},true);})();</script>
+<script async src="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/rm-pixel"></script>
 </body>
 </html>
